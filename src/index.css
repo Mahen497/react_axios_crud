@@ -1,0 +1,144 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+}
+
+h1{
+  font-size: 2em;
+  margin: 0;
+}
+h2{
+  font-size: 1.5em;
+  margin: 0;
+}
+h3{
+  font-size: 1.17em;
+  margin: 0;
+}
+h4{
+  font-size: 1em;
+  margin: 0;
+}
+h5{
+  font-size: 0.83em;
+  margin: 0;
+}
+h6{
+  font-size: 0.67em;
+  margin: 0;
+}
+a{
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+a:visited{
+  color: #007bff;
+}
+a:active{
+  color: #007bff;
+}
+a:focus{
+  color: #007bff;
+}
+
+input:focus-visible {
+  outline-offset: 0;
+}
+:focus-visible {
+  outline: 0;
+}
+
+.postlist{
+  padding: 16px;
+}
+.postlist h1{
+  margin-bottom: 20px;
+}
+.postlist ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.postlist li{
+  background-color: #191919;
+  padding: 16px;
+  border-radius: 8px;
+}
+.postlist .post_id{
+  padding-bottom: 5px;
+}
+.postlist .title{
+  padding-bottom: 8px;
+}
+.postlist .body{
+  padding-bottom: 10px;
+}
+.postlist .actions{
+  display: flex;
+  column-gap: 15px;
+  margin-top: 10px;
+}
+.postlist .postlist_inner{
+  max-width: 1530px;
+  margin: 0 auto;
+}
+.postlist .postlist_inner button {
+  background: #242424;
+  color: #FFF;
+  padding: 8px 16px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+button:hover {
+  border-style: inset;
+}
+
+
+.postlist_add{
+  background-color: #191919;
+  max-width: 575px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.postlist_add form input{
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  padding: 5px;
+}
+.postlist_add form [type="submit"]{
+  display: inline-block;
+}
